@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Custom Calendar</title>
+    <link rel="stylesheet" href="./style/index.css" />
+  </head>
+  <body>
+    <div class="calendar-toolbar">
+      <select name="category" id="">
+        <option value="">ALL EVENTS</option>
+      </select>
+      <div class="month-year">
+        <span class="prev">
+          <a href="javascrip:void(0);"><</a>
+        </span>
+        <span class="month">2</span>
+        <span class="year">2020</span>
+        <span class="next">
+          <a href="javascrip:void(0);">></a>
+        </span>
+      </div>
+      <select name="month" id="">
+        <option value="1">1</option>
+        <option value="2" selected>2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+      </select>
+    </div>
+    <table id="calendar" class="calendar-container" rules="all">
+      <colgroup>
+        <col class="column1" span="1" />
+        <col class="column1" span="1" />
+        <col class="column1" span="1" />
+        <col class="column1" span="1" />
+        <col class="column1" span="1" />
+        <col class="column1" span="1" />
+        <col class="column1" span="1" />
+      </colgroup>
+      <thead>
+        <tr>
+          <th>MONDAY</th>
+          <th>TUESDAY</th>
+          <th>WEDNESDAY</th>
+          <th>THURSDAY</th>
+          <th>FRIDAY</th>
+          <th>SATURDAY</th>
+          <th>SUNDAY</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <div class="day-item month-prev">
+              <div class="day">30</div>
+            </div>
+          </td>
+          <td>
+            <div class="day-item">
+              <div class="day">1</div>
+            </div>
+          </td>
+          <td>
+            <div class="day-item">
+              <div class="day">2</div>
+            </div>
+          </td>
+          <td>
+            <div class="day-item">
+              <div class="day">3</div>
+            </div>
+          </td>
+          <td>
+            <div class="day-item">
+              <div class="day">4</div>
+            </div>
+          </td>
+          <td>
+            <div class="day-item">
+              <div class="day">5</div>
+            </div>
+          </td>
+          <td>
+            <div class="day-item">
+              <div class="day">6</div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+  <script src="./script/index.js"></script>
+</html>

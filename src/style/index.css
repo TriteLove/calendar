@@ -1,0 +1,60 @@
+body {
+  padding: 20px;
+}
+.calendar-toolbar {
+  padding: 20px;
+  background-color: #633869;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+}
+.calendar-toolbar select {
+  line-height: 40px;
+  height: 40px;
+  background: none;
+  border: none;
+  color: #fff;
+}
+.calendar-toolbar select option {
+  color: #633869;
+}
+
+.calendar-container {
+  width: 100%;
+  height: auto;
+  border: 1px solid #ccc;
+}
+
+.calendar-container thead {
+}
+
+.calendar-container colgroup .column1 {
+  width: calc(1 / 7 * 100%);
+}
+
+.calendar-container thead th {
+  padding: 10px 10px;
+}
+
+.calendar-container tbody td {
+  height: 120px;
+}
+.calendar-container tbody td .day-item {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+    to top,
+    rgba(255, 255, 255, 0),
+    rgba(92, 107, 192, 0.03)
+  );
+}
+
+.calendar-container tbody td .day-item.month-prev,
+.calendar-container tbody td .day-item.month-next {
+  background-color: rgba(92, 107, 192, 0.1);
+}
+
+.calendar-container tbody td .day-item .day {
+  padding: 0 10px;
+  line-height: 25px;
+}
